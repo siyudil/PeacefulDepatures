@@ -1,0 +1,48 @@
+
+.obituary-card {
+  display: inline-block;
+  text-align: center;
+  background-color: #a8a6a6;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.7s, box-shadow 0.7s;
+  cursor: pointer;
+  width: 220px;
+  height: 290px;
+  overflow: hidden;
+}
+
+.obituary-card:hover {
+  transform: translateY(-15px);
+  background-color: #f8f8f8;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.obituary-card img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  margin-top: 15px;
+  object-fit: cover;
+  filter: grayscale(100%);       /* Grayscale by default */
+  transition: filter 0.7s ease;  /* Smooth transition to color */
+}
+
+.obituary-card:hover img {
+  filter: grayscale(0%);         /* Show real color on hover */
+}
+
+.obituary-card h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #333 !important;
+  transition: color 0.3s;
+}
+
+.obituary-card:hover h2 {
+  color: #000;  /* Slight color change for emphasis on hover */
+}
+
+

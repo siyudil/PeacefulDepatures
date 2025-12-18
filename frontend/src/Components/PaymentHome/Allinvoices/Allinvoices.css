@@ -1,0 +1,125 @@
+/* ===== Root Container ===== */
+.allinv-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ===== Title ===== */
+.allinv-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 28px;
+  color: #001850;
+  font-weight: 700;
+}
+
+/* ===== Empty Message ===== */
+.allinv-empty {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+/* ===== Invoice Card Layout ===== */
+.allinv-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.allinv-profile-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 300px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.allinv-profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Icon ===== */
+.allinv-icon {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* ===== Client Info ===== */
+.allinv-client-name {
+  margin: 8px 0 4px;
+  color: #001850;
+  font-weight: 600;
+}
+
+.allinv-client-desc {
+  color: #555;
+  font-size: 14px;
+}
+
+/* ===== Optional Shared Styles (if used elsewhere) ===== */
+.allinv-invoice-box {
+  border: 1px solid #ddd;
+  padding: 18px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.allinv-totals {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.allinv-totals table {
+  width: 320px;
+  border-collapse: collapse;
+}
+
+.allinv-totals .label {
+  text-align: left;
+  padding: 6px 10px;
+  font-weight: 600;
+}
+
+.allinv-totals .value {
+  text-align: right;
+  padding: 6px 10px;
+}
+
+.allinv-totals .total {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.allinv-footer {
+  margin-top: 18px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* ===== Download Button ===== */
+.allinv-download-btn {
+  background: #2b7cff;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.allinv-download-btn:hover {
+  background: #1a5edb;
+}

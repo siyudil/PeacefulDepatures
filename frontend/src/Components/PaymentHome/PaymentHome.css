@@ -1,0 +1,154 @@
+.paymenthome-fullpage {
+  margin-left: 260px;
+}
+
+.paymenthome-allinvoice {
+  padding-left: 30px;
+}
+
+/* ===== Header Section ===== */
+.paymenthome-title {
+  position: relative;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 1200px;
+  height: 50px;
+  color: #001850;
+  font-weight: 700;
+}
+
+.paymenthome-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ===== Action Buttons ===== */
+.paymenthome-btn {
+  border: none;
+  border-radius: 8px;
+  background-color: #0077ff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.paymenthome-btn:hover {
+  background-color: #005bbb;
+  transform: translateY(-2px);
+}
+
+/* ===== Payment List ===== */
+.paymenthome-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+.paymenthome-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paymenthome-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.paymenthome-icon {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* ===== Back Button ===== */
+.paymenthome-backbtn {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.paymenthome-backbtn:hover {
+  background-color: #005bbb;
+}
+
+/* ===== History Table ===== */
+.paymenthome-history-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #001850;
+  text-align: center;
+}
+
+.paymenthome-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.paymenthome-table th,
+.paymenthome-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+.paymenthome-table th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ===== Reports Section ===== */
+.paymenthome-reportgraphs {
+  padding-top: 0;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.paymenthome-reportbtn-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.paymenthome-reportbtn {
+  background: #001850;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.paymenthome-reportbtn:hover {
+  background-color: #003080;
+}
+
+/* ===== Dashboard Base ===== */
+.paymenthome-admin-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.paymenthome-admin-body {
+  display: flex;
+}

@@ -1,0 +1,73 @@
+/* ===== Payment Success Container ===== */
+.success-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* ===== Icon Section ===== */
+.success-icon-wrapper {
+  background: #e6fff2;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.success-icon-symbol {
+  color: #00c853;
+  width: 60px;
+  height: 60px;
+}
+
+/* ===== Text & Titles ===== */
+.success-title {
+  color: #1976d2;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.success-amount {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ===== Transaction Details ===== */
+.success-transaction-details {
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== Discount Text ===== */
+.success-discount-text {
+  color: #00c853;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* ===== Buttons ===== */
+.success-btn-primary {
+  background: #1976d2;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+}
+
+.success-btn-primary:hover {
+  background: #0d47a1;
+}

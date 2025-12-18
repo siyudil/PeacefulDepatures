@@ -1,0 +1,64 @@
+/* ===== Container ===== */
+.invoices-container {
+  background-color: #f8f9fb;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* ===== Title ===== */
+.invoices-title {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  color: #001850;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* ===== Description ===== */
+.invoices-description {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+/* ===== Invoice List ===== */
+.invoices-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invoices-item {
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 25px;
+}
+
+/* ===== Empty Message ===== */
+.invoices-empty {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* ===== Confirm Button ===== */
+.invoices-btn-confirm {
+  display: block;
+  margin: 20px auto;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #001850;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.invoices-btn-confirm:hover {
+  background-color: #003080;
+}

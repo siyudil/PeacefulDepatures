@@ -1,0 +1,70 @@
+.history-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #004080;
+  text-align: center;
+}
+
+/* ===== Table Layout ===== */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-thead {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.history-table th {
+  font-weight: bold;
+  color: #333;
+}
+
+.history-tbody tr:hover {
+  background-color: #e7effd;
+  transition: 0.3s ease;
+}
+
+/* ===== Responsive Table ===== */
+@media screen and (max-width: 768px) {
+  .history-table,
+  .history-thead,
+  .history-tbody,
+  .history-table th,
+  .history-table td,
+  .history-table tr {
+    display: block;
+  }
+
+  .history-thead tr {
+    display: none;
+  }
+
+  .history-tbody tr {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .history-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .history-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

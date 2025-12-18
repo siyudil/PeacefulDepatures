@@ -1,0 +1,43 @@
+/* Content area */
+.admin-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Notifications heading */
+.admin-content h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #111827;
+}
+
+/* Notification list */
+.notification-list {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin:auto;
+}
+
+.notification-list li {
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid #3b82f6; /* blue accent */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.notification-list li:hover {
+  transform: translateX(10px);
+}
+
+/* Optional: timestamp */
+.notification-list li small {
+  display: block;
+  color: #6b7280;
+  margin-top: 5px;
+  font-size: 12px;
+}

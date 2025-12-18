@@ -1,0 +1,92 @@
+/* ===== Invoice Form Container ===== */
+.invoice-container {
+  background: #f8f9fb;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.invoice-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #001850;
+}
+
+/* ===== Invoice Form ===== */
+.invoice-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+.invoice-section {
+  margin-top: 25px;
+  color: #001850;
+  font-weight: 700;
+}
+
+/* Labels & Inputs */
+.invoice-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.invoice-form input,
+.invoice-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.invoice-form input:focus,
+.invoice-form select:focus {
+  border: 1px solid #001850;
+  outline: none;
+}
+
+/* Card Popup */
+.invoice-card-popup {
+  background: #f9f9f9;
+  padding: 18px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Credit Card Form */
+.invoice-card-form {
+  background: #f0f5ff;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccd7ff;
+}
+
+/* Submit Button */
+.invoice-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #001850;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.invoice-submit-btn:hover {
+  background-color: #003080;
+}

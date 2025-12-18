@@ -1,0 +1,87 @@
+/* Page Wrapper */
+.edit-profile-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f9fbfd;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.edit-profile-page h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.edit-profile-page h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #3498db;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Form */
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Labels */
+.edit-profile-form label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+/* Inputs */
+.edit-profile-form input {
+  padding: 12px 14px;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: #fafafa;
+  transition: all 0.25s ease;
+}
+
+.edit-profile-form input:focus {
+  border-color: #3498db;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.25);
+}
+
+/* Button */
+.update-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.update-btn:hover {
+  background: linear-gradient(135deg, #2980b9, #21618c);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .edit-profile-page {
+    padding: 18px;
+  }
+}

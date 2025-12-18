@@ -1,0 +1,265 @@
+/* Main container */
+.obituary-details {
+  width: 100vw;
+  margin: 0;
+  background: white;
+}
+
+.details {
+  text-align: center;
+  background-color: rgb(230, 232, 236);
+  padding: 20px;
+  margin-left: -20px;
+}
+
+/* Update/Delete buttons */
+.update-btn, .delete-btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  width: 180px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.update-btn {
+  background: #3498db !important;
+  color: white;
+}
+
+.update-btn:hover {
+  background: #2980b9;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.download {
+  background: #2C3E50!important;
+  color: white;
+}
+
+/* Share buttons */
+.share-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.share-buttons button {
+  background-color: #2C3E50;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.share-buttons button:hover {
+  background-color: #e67e22;
+}
+
+/* Condolence Section */
+.condolence-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.condolence-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+/* Condolence form */
+.condolence-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.condolence-section textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  width: 90%;
+  margin: 0 auto;
+  font-family: inherit;
+  min-height: 80px;
+}
+
+.condolence-section input[type="file"] {
+  font-size: 16px;
+  color: #555;
+  align-self: center;
+  width: 220px; /* reduced width */
+  max-width: 90%;
+  text-overflow: ellipsis;
+}
+
+.condolence-section button[type="submit"] {
+  width: 120px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4b6cb7;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: center;
+  transition: background 0.3s;
+}
+
+.condolence-section button[type="submit"]:hover {
+  background-color: #3a52a0;
+}
+
+/* Condolence list */
+.condolence-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  padding: 15px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+
+
+.condolence-card p {
+  margin: 3px 0;
+  text-align: left;
+  margin-left: 10px;
+  word-wrap: break-word;
+  color: #333;
+}
+
+.condolence-card b {
+  color: #555;
+}
+
+/* Media inside condolences */
+.condolence-card img,
+.condolence-card video {
+  display: block;
+  margin: 10px 0;
+  max-width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  width: 150px;
+  object-fit:fill;
+}
+
+/* Obituary poster styling */
+.obituary-print-area {
+  background-color: #ffffff;
+  border: 2px solid #ccc; /* outer border */
+  padding: 30px 0px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Georgia', serif;
+  color: #333 !important;
+  position: relative;
+}
+
+/* Inner decorative line */
+.obituary-print-area::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px dashed #aaa; /* inner border line */
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+
+.obituary-print-area h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.obituary-print-area h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #000 !important;
+}
+
+.obituary-print-area p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.obituary-print-area .obituary-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.obituary-print-area .obituary-info img {
+  height: 250px;
+  width: 250px;
+  margin: 5px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Print-specific styling */
+@media print {
+  .obituary-print-area {
+    background-color: #ffffff !important;
+    border: 2px solid #000 !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .obituary-print-area,
+  .obituary-print-area * {
+    visibility: visible;
+  }
+
+  .obituary-print-area {
+    page-break-after: always;
+  }
+}
+
+
+

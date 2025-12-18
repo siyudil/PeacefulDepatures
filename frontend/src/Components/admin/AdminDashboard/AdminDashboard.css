@@ -1,0 +1,144 @@
+/* ===== Wrapper ===== */
+.admin-dashboard {
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* ===== Header ===== */
+.admin-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.admin-header h1 {
+  margin: 0;
+  color: #f1f5f9;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+/* ===== Sidebar ===== */
+.admin-sidebar {
+  position: fixed;
+  top: 70px;                 
+  left: 0;
+  width: 220px;
+  height: calc(100vh - 70px);
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  color: #e2e8f0;
+  padding: 25px 18px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #475569 #1e293b;
+  z-index: 999;
+}
+
+/* Sidebar scrollbar (WebKit) */
+.admin-sidebar::-webkit-scrollbar { width: 6px; }
+.admin-sidebar::-webkit-scrollbar-thumb { background-color: #475569; border-radius: 4px; }
+.admin-sidebar::-webkit-scrollbar-track { background: #1e293b; }
+
+/* ===== Sidebar content styles ===== */
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f8fafc;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 0.8px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 10px;
+}
+
+.sidebar-menu { list-style: none; margin: 0; padding: 0; }
+.sidebar-menu li { margin-bottom: 8px; }
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.sidebar-menu li a:hover {
+  background: rgba(59,130,246,0.15);
+  color: #fff;
+  transform: translateX(4px);
+}
+
+.sidebar-menu li a.active {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(37,99,235,0.4);
+  transform: scale(1.02);
+}
+
+.sidebar-icon { font-size: 17px; color: #93c5fd; transition: color .3s, transform .2s; }
+.sidebar-menu li a:hover .sidebar-icon,
+.sidebar-menu li a.active .sidebar-icon { color: #fff; transform: scale(1.15); }
+
+/* ===== Body wrapper  ===== */
+.admin-body {
+  margin-top: 70px; 
+  background-color: #eef2f7;
+}
+
+/* ===== Content pane ===== */
+.admin-content {
+  position: fixed;
+  top: 70px;                 /* below header */
+  left: 220px;               /* to the right of sidebar */
+  right: 0;
+  bottom: 0;                 /* fill to bottom */
+  padding: 30px 35px;
+  background: #f9fafb;
+  overflow-y: auto;          /* enable vertical scroll here */
+  overflow-x: hidden;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  margin-left: 30px;
+}
+
+/* Content scrollbar (WebKit) */
+.admin-content::-webkit-scrollbar { width: 8px; }
+.admin-content::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+.admin-content::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+/* ===== Headings inside content ===== */
+.admin-content h2 {
+  font-size: 23px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+  border-left: 4px solid #2563eb;
+  padding-left: 10px;
+  letter-spacing: 0.3px;
+}

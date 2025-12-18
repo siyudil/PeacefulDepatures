@@ -1,0 +1,343 @@
+/* Form Wrapper */
+.form-wrapper {
+  max-width: 1100px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* Progress Bar */
+.progressbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 70px;
+}
+.step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #d1d5db;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+.step.active {
+  background: #2563eb;
+}
+.line {
+  flex: 1;
+  height: 3px;
+  background: #d1d5db;
+  transition: background 0.3s ease;
+}
+.line.active {
+  background: #2563eb;
+}
+
+/* Section Headings */
+.form-section h2 {
+  margin-bottom: 25px;
+  color: #2563eb;
+  border-bottom: 3px solid #5889f1a6;
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Form Grid (two columns) */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 40px; /* row-gap column-gap */
+  margin-bottom: 25px;
+}
+
+/* Labels with red star */
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+label .required {
+  color: red;
+  margin-left: 4px;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  width: 95%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
+}
+
+/* Buttons */
+.form-navigation {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+button[type="button"] {
+  background: #6b7280; /* grey */
+}
+button[type="submit"],
+.form-navigation button:last-child {
+  background: #2563eb; /* blue */
+}
+
+/* Error Messages */
+.error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin-top: -8px;
+  margin-bottom: 12px;
+}
+
+/* Price Summary Card (Step 4) */
+.price-summary {
+  margin-top: 25px;
+  padding: 20px 24px;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+}
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #374151;
+}
+.price-row.total {
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 2px solid #e5e7eb;
+  margin-top: 12px;
+  padding-top: 10px;
+  color: #111827;
+}
+
+/* Textarea full width */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Service row layout */
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr auto 40px; /* Name | Price | Checkbox */
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin: 8px 0;
+  background: #f9fafb;
+  font-size: 16px;
+  color: #333;
+  max-width: 1025px;  
+}
+
+.service-name {
+  font-weight: 500;
+}
+
+.service-price {
+  color: #2563eb !important;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.service-row input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+  justify-self: center; /* ensures all checkboxes align vertically */
+}
+
+/* Highlight invalid fields */
+.error-border {
+  border-color: #dc2626 !important;
+  background-color: #fef2f2; /* light red background */
+}
+
+.error-border:focus {
+  border-color: #b91c1c !important;
+  box-shadow: 0 0 6px rgba(220, 38, 38, 0.4);
+}
+
+/* Ensure error messages align with inputs */
+input.error-border,
+select.error-border,
+textarea.error-border {
+  margin-bottom: 6px; /* tighten spacing when error message shows */
+}
+
+/* === AVAILABILITY FEEDBACK === */
+.availability-msg {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 1020px;
+}
+
+.availability-msg.success {
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.availability-msg.error {
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+/* === SUGGESTIONS BOX === */
+.suggestions-box {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  color: #1e293b;
+}
+
+.suggestions-box strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #0f172a;
+}
+
+.suggestions-box ul {
+  margin: 4px 0 10px 18px;
+  padding: 0;
+  list-style-type: circle;
+}
+
+.availability-msg.success {
+  color: #059669;
+  font-weight: 600;
+}
+
+.availability-msg.error {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* === Real-time glow effects === */
+.glow-success {
+  box-shadow: 0 0 10px 2px rgba(16, 185, 129, 0.7); /* emerald green */
+  border: 1px solid #10b981;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-error {
+  box-shadow: 0 0 10px 2px rgba(239, 68, 68, 0.7); /* red */
+  border: 1px solid #ef4444;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Disabled submit button */
+.disabled-btn {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #ccc !important;
+  color: #666 !important;
+}
+
+/* Glowing feedback for real-time check */
+.glow-success {
+  box-shadow: 0 0 10px 2px rgba(16, 185, 129, 0.7);
+  border: 1px solid #10b981;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-error {
+  box-shadow: 0 0 10px 2px rgba(239, 68, 68, 0.7);
+  border: 1px solid #ef4444;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animated fade for message */
+.availability-msg {
+  margin-top: 8px;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Clickable Suggestions === */
+.clickable-suggestion {
+  display: inline-block;
+  background-color: #f1f5f9;
+  padding: 6px 10px;
+  margin: 4px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.clickable-suggestion:hover {
+  background-color: #e0f2fe;
+  border-color: #38bdf8;
+  color: #0369a1;
+  transform: scale(1.05);
+}
+
+.checking-msg {
+  color: #2563eb;
+  font-style: italic;
+  margin-top: 4px;
+}

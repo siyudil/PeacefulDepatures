@@ -1,0 +1,295 @@
+/* Scope to the page root to ensure overrides take effect */
+.add-obituary {
+  background: #f7fafc;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.add-obituary .add-obituary-container {
+  width: 90%;
+  max-width: 640px;
+}
+
+/* Ensure all fields are full width and consistent */
+.add-obituary .form-step input,
+.add-obituary .form-step select,
+.add-obituary .form-step textarea,
+.add-obituary .add-obituary-container input[type="file"] {
+  width: 100% !important;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Labels and required marker */
+.add-obituary .form-step label {
+  color: #111827;
+  font-weight: 600;
+}
+.add-obituary .required { color: #ef4444; }
+
+/* Navigation buttons alignment like screenshots */
+.add-obituary .form-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-obituary .form-navigation button { border-radius: 999px; }
+/* AddObituary.css - Modern Style */
+
+.add-obituary-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-obituary-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.add-obituary-container h3 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.add-obituary-container hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin-bottom: 25px;
+}
+
+.add-obituary-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-obituary-container label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.add-obituary-container input,
+.add-obituary-container select,
+.add-obituary-container textarea {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.add-obituary-container input:focus,
+.add-obituary-container select:focus,
+.add-obituary-container textarea:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.3);
+  outline: none;
+}
+
+.add-obituary-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-obituary-container button {
+  padding: 14px 20px;
+  background: #2980b9;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-obituary-container button:hover {
+  background: #1c5980;
+  transform: translateY(-2px);
+}
+
+.add-obituary-container input[type="file"] {
+  padding: 6px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-obituary-container input::placeholder,
+.add-obituary-container textarea::placeholder {
+  color: #95a5a6;
+  font-style: italic;
+}
+
+.hug-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 15px 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.add-obituary-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.add-obituary-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background: #0ea5e9; /* teal/blue */
+  transition: width 0.3s ease;
+}
+
+.form-step {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-step label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-step input,
+.form-step select,
+.form-step textarea {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-step input:focus,
+.form-step select:focus,
+.form-step textarea:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14,165,233,0.15);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-navigation button {
+  padding: 10px 18px;
+  background: #0ea5e9;
+  color: #fff;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+  min-width: 84px;
+}
+
+.form-navigation button:hover {
+  background: #0284c7;
+  transform: translateY(-1px);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm-btn {
+  background: #363535;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #ddd;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #01011a;
+}
+
+.cancel-btn:hover {
+  background: #bbb;
+}
+
+.required {
+  color: red;
+  margin-left: 2px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,58 @@
+.updateinvoice-container {
+  max-width: 650px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.updateinvoice-title {
+  text-align: center;
+  color: #001850;
+  margin-bottom: 20px;
+}
+
+.updateinvoice-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.updateinvoice-label {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.updateinvoice-input,
+.updateinvoice-select {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.updateinvoice-services-box {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.updateinvoice-btn-submit {
+  margin-top: 25px;
+  padding: 12px;
+  background: #001850;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.updateinvoice-btn-submit:hover {
+  background: #003080;
+}

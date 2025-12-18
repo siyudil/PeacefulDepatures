@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Left item to left, right items to right */
+  align-items: center;
+  padding: 0px 20px;
+  list-style: none;
+  margin: 0;
+  height: 120px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 100px; /* adjust size */
+  margin-right: 10px; /* space between logo and text */
+}
+
+.header-h1 {
+  font-style:italic;
+  padding-left: 20px;
+  font-size: 40px;
+}
+
+/* Right side */
+.header-right {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Buttons */
+.header-btn {
+  background-color: #7D9D9C; /* Orange button */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.2s;
+}
+
+.header-btn:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+}
+
+
+/* Reset default ul styles */
+.home-ul {
+  list-style-type: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Make items horizontal */
+  background-color: #2C3E50; /* Dark blue background */
+  justify-content: space-around; /* Space items evenly */
+  align-items: center;
+  height: 70px; 
+  width: 100vw;
+  margin-left: -20px;
+}
+
+/* Each li item */
+.home-li {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+/* Style h1 inside li */
+.home-li h1 {
+  font-size: 20px;
+  color: #ecf0f1; /* Light text */
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.home-li:hover h1 {
+  color: #e67e22; /* Orange on hover */
+  transform: scale(1.1); /* Slight zoom */
+}
+
+/* Optional: change cursor style for links */
+.home-li h1 {
+  pointer-events: none; /* Ensures li handles hover */
+}
+
+
+/* Links */
+.nav-link {
+  text-decoration: none;   /* Remove underline */
+  color: #ecf0f1;          /* Light text */
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: #7D9D9C; /* Orange highlight */
+  color: #fff;
+}
+
+/* Active link style (if you want) */
+.nav-link.active {
+  background-color: #d35400;
+  color: #fff;
+}

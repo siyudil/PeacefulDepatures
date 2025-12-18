@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  background: linear-gradient(135deg, #f4f7fa, #eef2f7);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+h1.page-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #2c3e50;
+}
+
+.booking-page {
+  background-color: #ecf5fa;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.booking-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.booking-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booking-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Clean one-line layout: Booking ID (left) + Status (right) ===== */
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+/* Booking ID text aligned left */
+.booking-header h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #007bff;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Status badge aligned right */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Status colors */
+.status-badge.pending {
+  background: linear-gradient(135deg, #fde68a, #facc15);
+  color: #654321;
+}
+
+.status-badge.approved {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: #fff;
+}
+
+.status-badge.rejected {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: #fff;
+}
+/* ===== Sections ===== */
+.booking-card h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #3498db;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 8px;
+}
+
+.booking-section {
+  margin-bottom: 18px;
+}
+
+.booking-section h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2980b9;
+  border-left: 4px solid #3498db;
+  padding-left: 8px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+}
+
+.booking-grid p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.booking-grid strong {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ===== Actions ===== */
+.booking-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.booking-actions a,
+.booking-actions button {
+  flex: 1;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* Blue gradient for links */
+.booking-actions a {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: #fff;
+}
+
+.booking-actions a:hover {
+  background: linear-gradient(135deg, #2980b9, #1f5e88);
+}
+
+/* Red gradient for delete button */
+.booking-actions button {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: #fff;
+}
+
+.booking-actions button:hover {
+  background: linear-gradient(135deg, #c0392b, #922b21);
+}
+
+/* ===== Disabled Button (Admin Delete Restriction) ===== */
+.disabled-btn {
+  background: linear-gradient(135deg, #cbd5e1, #94a3b8);
+  color: #475569;
+  cursor: not-allowed;
+}
+
+/* ===== Rejected Booking Message ===== */
+.rejected-msg {
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* ===== Book Again Button ===== */
+.book-again-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  flex: 1;
+}
+
+.book-again-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
