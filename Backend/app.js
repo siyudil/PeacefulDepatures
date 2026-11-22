@@ -1,4 +1,5 @@
 // password: B2wgFQyO8JZ484xx
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -56,7 +57,7 @@ app.get("/customer-only", verifyToken(["customer", "admin"]), (req, res) => {
   res.json({ msg: "Hello Customer" });
 });
 
-mongoose.connect("mongodb+srv://teamusers:Team123@cluster0.2yhqevb.mongodb.net/funeralDB")
+mongoose.connect(process.env.MONGO_URI);
   .then(() => console.log("Connected to MongoDB"))
   .then(() => {
     app.listen(5000, () => console.log("Server running on port 5000"));
